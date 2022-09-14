@@ -45,6 +45,7 @@ class BooksController extends Controller
         $this->validate($request, [
             'name' => 'required|unique:books|max:30',
             'description' => 'required|max:100',
+            'pengarang' => 'required|max:50',
             'penerbit' => 'required|max:30',
             'tanggal_terbit' => 'required|date',
             'stock' => 'required|integer'
@@ -53,6 +54,7 @@ class BooksController extends Controller
         $book = new Book;
         $book->name = $request->name;
         $book->description = $request->description;
+        $book->pengarang = $request->pengarang;
         $book->penerbit = $request->penerbit;
         $book->tanggal_terbit = $request->tanggal_terbit;
         $book->stock = $request->stock;
@@ -85,6 +87,7 @@ class BooksController extends Controller
         $this->validate($request, [
             'name' => 'required|max:30',
             'description' => 'required|max:100',
+            'pengarang' => 'required|max:50',
             'penerbit' => 'required|max:30',
             'tanggal_terbit' => 'required|date',
             'stock' => 'required|integer'

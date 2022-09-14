@@ -8,11 +8,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Perpustakaan') }}</title>
 
     <!-- Styles -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
     <link href="/css/app.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/perpusicon2.png">
 
     <!-- Scripts -->
     <script>

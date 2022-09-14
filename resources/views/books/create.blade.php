@@ -11,15 +11,21 @@
                     {!! Form::open(['method' => 'POST', 'route' => 'books.store']) !!}
                     
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            {!! Form::label('name', 'Name') !!}
+                            {!! Form::label('name', 'Nama Buku') !!}
                             {!! Form::text('name', null, ['class' => 'form-control', 'required' => 'required']) !!}
                             <small class="text-danger">{{ $errors->first('name') }}</small>
                         </div>
 
                         <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
-                            {!! Form::label('description', 'Description') !!}
+                            {!! Form::label('description', 'Deskripsi') !!}
                             {!! Form::text('description', null, ['class' => 'form-control', 'required' => 'required']) !!}
                             <small class="text-danger">{{ $errors->first('description') }}</small>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('pengarang') ? ' has-error' : '' }}">
+                            {!! Form::label('pengarang', 'Pengarang') !!}
+                            {!! Form::text('pengarang', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                            <small class="text-danger">{{ $errors->first('pengarang') }}</small>
                         </div>
 
                         <div class="form-group{{ $errors->has('penerbit') ? ' has-error' : '' }}">

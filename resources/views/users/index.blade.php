@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     List Users
-                    <a href="{{ route('users.create') }}" class="btn btn-primary btn-xs pull-right">Create new user</a>
+                    <a href="{{ route('users.create') }}" class="btn btn-primary btn-xs pull-right">Tambahkan Anggota Baru</a>
                 </div>
 
                 <div class="panel-body">
@@ -15,7 +15,7 @@
                         <thead>
                             <tr>
                                 <th>NIS</th>
-                                <th>Name</th>
+                                <th>Nama Siswa</th>
                                 <th>Email</th>
                                 <th>No Handphone</th>
                                 <th>Alamat</th>

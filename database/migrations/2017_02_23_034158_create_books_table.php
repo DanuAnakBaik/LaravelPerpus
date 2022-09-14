@@ -17,6 +17,7 @@ class CreateBooksTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('description');
+            $table->string('pengarang');
             $table->string('penerbit');
             $table->date('tanggal_terbit');
             $table->integer('stock');

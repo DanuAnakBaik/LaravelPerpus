@@ -8,15 +8,16 @@
                 <div class="panel-heading">
                     List Buku 
 
-                    <a href="{{ route('books.create') }}" class="btn btn-primary btn-xs pull-right">Create new books</a>
+                    <a href="{{ route('books.create') }}" class="btn btn-primary btn-xs pull-right">Tambahkan Buku Baru</a>
                 </div>
 
                 <div class="panel-body">
                     <table class="table table-striped table-hover">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Description</th>
+                                <th>Nama Buku</th>
+                                <th>Deskripsi</th>
+                                <th>Pengarang</th>
                                 <th>Penerbit</th>
                                 <th>Tanggal Terbit</th>
                                 <th>Stock</th>
@@ -28,6 +29,7 @@
                                 <tr>
                                     <td>{{ $book->name }}</td>
                                     <td>{{ $book->description }}</td>
+                                    <td>{{ $book->pengarang }}</td>
                                     <td>{{ $book->penerbit }}</td>
                                     <td>{{ $book->tanggal_terbit }}</td>
                                     <td>

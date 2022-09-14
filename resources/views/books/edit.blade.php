@@ -22,6 +22,12 @@
                             <small class="text-danger">{{ $errors->first('description') }}</small>
                         </div>
 
+                        <div class="form-group{{ $errors->has('pengarang') ? ' has-error' : '' }}">
+                            {!! Form::label('pengarang', 'Pengarang') !!}
+                            {!! Form::text('pengarang', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                            <small class="text-danger">{{ $errors->first('pengarang') }}</small>
+                        </div>
+
                         <div class="form-group{{ $errors->has('penerbit') ? ' has-error' : '' }}">
                             {!! Form::label('penerbit', 'Penerbit') !!}
                             {!! Form::text('penerbit', null, ['class' => 'form-control', 'required' => 'required']) !!}
